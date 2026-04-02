@@ -1,0 +1,39 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.navItem {
+    background: none;
+    border: none;
+    padding-left: 16px;
+    cursor: pointer;
+    border-left: 2px solid black;
+}
+
+.navItem:hover {
+    text-decoration-line: underline;
+    text-underline-offset: 14px;
+} 
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .navItem {
+    border-left: none;
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .navItem:hover {
+    text-decoration-line: underline;
+    text-underline-offset: 6px;
+} 
+}

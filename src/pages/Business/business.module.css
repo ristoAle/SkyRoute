@@ -1,0 +1,33 @@
+.businessPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardInfo {
+    border: 2px solid rgba(0, 0, 0, 0.84);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 36px;
+    gap: 16px;
+    text-align: left;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.cardWrapper {
+    width: 220px;
+}
+
+@media (max-width: 768px) {
+    .cardInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: left;
+    }
+}
