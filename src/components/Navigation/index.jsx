@@ -6,7 +6,7 @@ const Navigation = ({updateFunction}) => {
         <>
             <div className={styles.navigation}>
                 {navLinks.map((navItem, index) => (
-                    <button className={styles.navItem} key={index} onClick={() => updateFunction(navItem)}>{navItem.toUpperCase()}</button>
+                    <button className={styles.navItem} key={index} onClick={() => updateFunction(navItem === "Home" ? null : navItem)}>{navItem.toUpperCase()}</button>
                 ))}
             </div>
         </>
