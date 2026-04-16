@@ -12,10 +12,7 @@ const Business = ({updateFunction}) => {
                     {businessCards.map((card, index) => 
                     <div className={styles.cardWrapper} key={index}>
                         <Card
-                            title={card.title}
-                            description={card.description}
-                            capacity={card.capacity}
-                            image={card.image}
+                            {...card}
                             page={card.page}
                             updateFunction={updateFunction}
                         />
