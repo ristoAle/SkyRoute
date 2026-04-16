@@ -12,7 +12,6 @@ function App() {
     <>
       <Header updateFunction={setPage} />
         {!page && <Home updateFunction={setPage} />}
-        {page === "Home" && <Home updateFunction={setPage} />}
         {page === "Commercial" && <Commercial updateFunction={setPage} />}
         {page === "Business" && <Business updateFunction={setPage} />}
       <Footer />
