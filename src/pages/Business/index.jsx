@@ -2,7 +2,7 @@ import styles from './business.module.css'
 import { businessCards } from '../../data/data'
 import Card from '../../components/Card'
 
-const business = ({updateFunction}) => {
+const Business = ({updateFunction}) => {
     return (
         <>
             <div className={styles.businessPage}>
@@ -27,4 +27,4 @@ const business = ({updateFunction}) => {
     )
 }
 
-export default business
+export default Business
